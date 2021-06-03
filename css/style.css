@@ -1,0 +1,114 @@
+:root{
+    --fontInter: 'Inter','sans-serif';
+    --fontLexend: 'Lexend', 'sans-serif';
+    
+    --darkDesaturatedBlue : hsl(244, 38%, 16%);
+    --slightlyTransparentWhite : hsla(0, 0%, 100%, 0.75);
+    --slightlyTransparentWhite2 : hsla(0, 0%, 100%, 0.6);
+    --softViolet : hsl(277, 64%, 61%);
+    --veryDarBlue : hsl(233, 47%, 7%);
+    --white : hsl(0, 0%, 100%);
+}
+
+body{
+    background-color: var(--veryDarBlue);
+}
+main{
+    background-color: var(--darkDesaturatedBlue);
+    border-radius: 10px ;
+    margin: 5vw;
+    text-align: center;
+}
+.image{
+    border-radius: 10px 10px 0 0 ;
+    height: 220px;
+    object-fit:cover;
+    width: 100%;
+}
+h1{
+    color: var(--white);
+    font-family: var(--fontInter);
+    font-size: 2rem;
+    font-weight:700;
+    margin: 2rem;
+    text-align: center;
+}
+.insights{
+    color: var(--softViolet);
+}
+h2{
+    color: var(--slightlyTransparentWhite2);
+    font-family: var(--fontLexend);
+    font-size: 1rem;
+    margin: 2rem;
+    line-height: 2rem;
+}
+h3{
+    color: var(--white);
+    font-family: var(--fontLexend);
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 1rem 0 1rem 0 ;
+}
+p{
+    color: var(--slightlyTransparentWhite2);
+    font-family: var(--fontInter);
+    font-size: 0.6rem;
+    font-weight: 400;
+    padding: 0 0 2rem 0; 
+    text-transform: uppercase;
+}
+
+.attribution{
+    color: var(--slightlyTransparentWhite2);
+    text-align: center;
+}
+.attributionLink{
+    color: var(--softViolet);
+}
+.linkDk{
+    color: darkorange;
+}
+@media(min-width: 375px){        
+    main{
+        width: 80%;
+        height: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 5vw auto;
+    }
+    .image{
+        border-radius: 0 10px 10px 0;
+        height: initial;
+        object-fit:cover;
+        width: 50%;
+    }
+    .text{
+        border-radius: 10px;
+        order:-1;
+        width: 50%;
+    }
+    h1{
+        margin: 5vw 5vw 2vw 5vw;
+        text-align: start;
+    }
+    h2{
+        margin: 0vw 5vw;
+        text-align: start;
+    }
+    h3{
+        text-align: start;
+    }
+    .alcance1{
+        display: inline-block;
+        padding: 20% 10% 0 0%;        
+    }
+    .alcance2{
+        display: inline-block;
+        padding: 20% 10% 0 0%;        
+    }
+    .alcance3{
+        display: inline-block;
+        padding: 20% 10% 0 0%;        
+    }
+}
